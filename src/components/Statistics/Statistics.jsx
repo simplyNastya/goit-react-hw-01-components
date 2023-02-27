@@ -1,10 +1,12 @@
-import StatisticsItem from './StatisticsItem/StaticticsItem';
 import PropTypes, { shape } from 'prop-types';
 import './statistics.css';
 
 const Statistics = ({ title, stats = [] }) => {
   const elements = stats.map(({ id, label, percentage }) => (
-    <StatisticsItem key={id} label={label} percentage={percentage} />
+    <li key={id} className="item">
+      <span className="label">{label}</span>
+      <span className="percentage">{percentage}%</span>
+    </li>
   ));
   return (
     <section className="statistics">
