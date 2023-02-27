@@ -23,6 +23,8 @@ export const App = () => {
 
       <Statistics title="Upload stats" stats={statistics} />
       <Statistics stats={statistics} />
+
+      <FriendList friends={friends} />
     </>
   );
 };
