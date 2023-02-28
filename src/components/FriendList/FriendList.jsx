@@ -1,4 +1,4 @@
-import PropTypes, { shape } from 'prop-types';
+import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem/FriendListItem';
 import styles from './friendList.module.css';
 
@@ -13,7 +13,7 @@ export default FriendList;
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
-    shape({
+    PropTypes.shape({
       id: PropTypes.number.isRequired,
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
