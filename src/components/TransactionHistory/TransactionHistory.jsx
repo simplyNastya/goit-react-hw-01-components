@@ -7,12 +7,12 @@ const TransactionHistory = ({ items }) => {
     <TransactionItem key={id} type={type} amount={amount} currency={currency} />
   ));
   return (
-    <table className="transaction-history">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+    <table className={styles.table}>
+      <thead className={styles.tableHead}>
+        <tr className={styles.tableRow}>
+          <th className={styles.tableCell}>Type</th>
+          <th className={styles.tableCell}>Amount</th>
+          <th className={styles.tableCell}>Currency</th>
         </tr>
       </thead>
 

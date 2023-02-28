@@ -1,0 +1,12 @@
+.tableDataCell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 600;
+
+    color: gray;
+}
+
+.tableRow:nth-child(2n) {
+    background-color: rgb(221, 219, 219);
+}
