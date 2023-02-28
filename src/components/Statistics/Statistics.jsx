@@ -1,9 +1,14 @@
 import PropTypes from 'prop-types';
 import styles from './statistics.module.css';
+import randomColor from './randomColor';
 
 const Statistics = ({ title, stats = [] }) => {
   const elements = stats.map(({ id, label, percentage }) => (
-    <li key={id} className={styles.item}>
+    <li
+      key={id}
+      style={{ backgroundColor: randomColor() }}
+      className={styles.item}
+    >
       <span className={styles.label}>{label}</span>
       <span className={styles.percentage}>{percentage}%</span>
     </li>
