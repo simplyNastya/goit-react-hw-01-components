@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border: 1px solid gray;
+}
+
+.status::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+
+.statOnline { 
+    background-color: green;
+    border-radius: 50%;
+}
+
+.statOfline {
+    background-color: red;
+    border-radius: 50%;
+}
+
+.avatar {}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+}
