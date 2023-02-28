@@ -1,5 +1,5 @@
 import PropTypes, { shape } from 'prop-types';
-import './friendListItem.css';
+import styles from './friendListItem.module.css';
 
 const FriendListItem = ({ id, avatar, name, isOnline }) => {
   const online = isOnline ? 'status active' : 'status';

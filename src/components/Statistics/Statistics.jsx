@@ -1,5 +1,5 @@
 import PropTypes, { shape } from 'prop-types';
-import './statistics.css';
+import styles from './statistics.module.css';
 
 const Statistics = ({ title, stats = [] }) => {
   const elements = stats.map(({ id, label, percentage }) => (
