@@ -7,7 +7,6 @@
 
     color: #fff;
     background-color: #2a008c;
-
 }
 
 .description {
@@ -69,8 +68,6 @@
     padding-right: 13px;
     border-right: 1px solid #2a008c;
 }
-
-.label {}
 
 .quantity {
     font-size: 14px;
