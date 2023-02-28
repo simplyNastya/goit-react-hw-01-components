@@ -1,0 +1,30 @@
+.statistics {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+
+    padding-top: 50px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: gray;
+}
+
+.statlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    font-weight: 500;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 50px;
+    text-align: center;
+}
