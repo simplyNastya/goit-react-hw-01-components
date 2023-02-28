@@ -1,9 +1,9 @@
 import PropTypes, { shape } from 'prop-types';
 import './transactionItem.css';
 
-const TransactionItem = ({ type, amount, currency }) => {
+const TransactionItem = ({ id, type, amount, currency }) => {
   return (
-    <tr>
+    <tr key={id}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>

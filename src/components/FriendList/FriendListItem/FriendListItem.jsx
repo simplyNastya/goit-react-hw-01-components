@@ -1,10 +1,10 @@
 import PropTypes, { shape } from 'prop-types';
 import './friendListItem.css';
 
-const FriendListItem = ({ avatar, name, isOnline }) => {
+const FriendListItem = ({ id, avatar, name, isOnline }) => {
   const online = isOnline ? 'status active' : 'status';
   return (
-    <li className="item">
+    <li key={id} className="item">
       <span className={online}>{isOnline}</span>
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <p className="name">{name}</p>

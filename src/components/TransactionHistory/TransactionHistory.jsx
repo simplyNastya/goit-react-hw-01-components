@@ -1,5 +1,5 @@
-import TransactionItem from './TransactionItem/TransactionItem';
 import PropTypes, { shape } from 'prop-types';
+import TransactionItem from './TransactionItem/TransactionItem';
 import './transactionHistory.css';
 
 const TransactionHistory = ({ items }) => {
